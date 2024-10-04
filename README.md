@@ -3,7 +3,7 @@ I am running this in a virtual machine because there seems to be some configurat
 1. Setup env for rsdk by running these commands:
     ```sh
     sudo apt update
-    sudo apt install git qemu-user-static binfmt-support curl docker.io -y
+    sudo apt install git npm qemu-user-static binfmt-support curl docker.io -y
     sudo usermod -a -G docker $USER
     # Reboot for the above command to take affect
     sudo reboot
@@ -14,8 +14,7 @@ I am running this in a virtual machine because there seems to be some configurat
     git clone --recurse-submodules https://github.com/RadxaOS-SDK/rsdk.git
     cd rsdk
     npm install @devcontainers/cli
-    echo 'export PATH="$PWD/src/bin:$PWD/node_modules/.bin:$PATH"' >> ~/.bashrc
-    source ~/.bashrc
+    export PATH="$PWD/src/bin:$PWD/node_modules/.bin:$PATH"
     ```
 
 3. Create an overlays directory
