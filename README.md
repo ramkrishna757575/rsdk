@@ -15,6 +15,7 @@ I am running this in a virtual machine because there seems to be some configurat
     cd rsdk
     npm install @devcontainers/cli
     echo 'PATH="$PWD/src/bin:$PWD/node_modules/.bin:$PATH"' >> ~/.bashrc
+    source ~/.bashrc
     ```
 
 3. Create an overlays directory
