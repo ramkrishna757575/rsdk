@@ -1,3 +1,5 @@
+I am running this in a virtual machine because there seems to be some configuration issue in my host machine, which results in build failure. Follow these steps to build the radxa groundstation image for OpenIPC either in your host machine or in a virtual machine (I am using ubuntu 20 in virtual machine)
+
 1. Setup env for rsdk by running these commands:
     ```sh
     sudo apt update
@@ -71,3 +73,8 @@ customize-hooks section should now look like this:
 7. This will create an output.img file inside `out/radxa-zero3_bullseye_cli` folder
 
 8. This output.img file can now be flashed into an SD card and can be used to boot radxa.
+
+
+> **Note:**
+> - During the build process, some popup appears for which you need to select the OK button. We will have to find a way to bypass those if we plan to move this build process to CI/CD pipelines.
+> - Currently building and installing of the AU/EU adapter driver modules and wifibroadcast is failing
