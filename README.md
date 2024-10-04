@@ -14,7 +14,7 @@ I am running this in a virtual machine because there seems to be some configurat
     git clone --recurse-submodules https://github.com/RadxaOS-SDK/rsdk.git
     cd rsdk
     npm install @devcontainers/cli
-    echo 'PATH="$PWD/src/bin:$PWD/node_modules/.bin:$PATH"' >> ~/.bashrc
+    echo 'export PATH="$PWD/src/bin:$PWD/node_modules/.bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
     ```
 
